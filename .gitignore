@@ -1,0 +1,12 @@
+**/target/
+**/*.db
+**/*.db-shm
+**/*.db-wal
+**/*.exe
+**/*.pdb
+**/.env
+**/.env.*
+**/beta-access.json
+**/TEST-ACCESS.md
+**/native/gen/
+node_modules/

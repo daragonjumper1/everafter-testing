@@ -1,0 +1,40 @@
+name: Report a problem
+description: Something did not work as expected in the test app.
+title: '[Bug] '
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What went wrong?
+      description: Please use fictional examples; do not include guest contact details or API keys.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: '1. Open Guests ...'
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: iPhone / Safari, Android / Chrome, Windows / Edge
+  - type: dropdown
+    id: version
+    attributes:
+      label: Which version?
+      options:
+        - GitHub Pages browser demo
+        - Windows native app
+        - Local Rust browser app
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or additional details
+      description: Remove personal information before attaching screenshots.

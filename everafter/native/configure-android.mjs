@@ -1,0 +1,14 @@
+import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const main=path.join(root,'gen/android/app/src/main');
+const manifestPath=path.join(main,'AndroidManifest.xml');
+let manifest=await readFile(manifestPath,'utf8');
+if(!manifest.includes('<application'))throw new Error('Generated Android manifest has no application element.');
+if(!manifest.includes('android:networkSecurityConfig'))manifest=manifest.replace('<application','<application android:networkSecurityConfig="@xml/network_security_config"');
+if(!manifest.includes('android.permission.INTERNET'))manifest=manifest.replace('<application','<uses-permission android:name="android.permission.INTERNET"/><application');
+await mkdir(path.join(main,'res/xml'),{recursive:true});
+await copyFile(path.join(root,'android/network_security_config.xml'),path.join(main,'res/xml/network_security_config.xml'));
+await writeFile(manifestPath,manifest);
+console.log('Android local-server networking configured; other cleartext hosts remain disabled.');

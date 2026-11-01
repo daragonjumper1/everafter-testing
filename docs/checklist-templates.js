@@ -1,0 +1,1439 @@
+window.EVERAFTER_STARTERS={
+  "baseDate": "2030-01-01",
+  "templates": {
+    "Buddhist": [
+      {
+        "done": false,
+        "due": "2029-07-05",
+        "id": "starter:common:budget",
+        "name": "Agree on your wedding budget and priorities",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-08-04",
+        "id": "starter:common:venue",
+        "name": "Shortlist and confirm ceremony and celebration venues",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:guest-list",
+        "name": "Build your guest list and planning tiers",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:officiant",
+        "name": "Confirm your officiant or ceremony leader",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:requirements",
+        "name": "Check local marriage registration and document requirements",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:common:vendors",
+        "name": "Compare and book catering, photography, and key vendors",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-18",
+        "id": "starter:common:invitations",
+        "name": "Design invitations and collect mailing addresses",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:common:rsvp",
+        "name": "Send invitations and set an RSVP deadline",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:common:logistics",
+        "name": "Arrange guest accommodation and transport",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:common:preferences",
+        "name": "Confirm meal preferences and accessibility needs",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:common:run-sheet",
+        "name": "Create the day-of schedule and share key contacts",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-25",
+        "id": "starter:common:final-confirmations",
+        "name": "Reconfirm vendors, guest counts, and remaining payments",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:Buddhist:ceremony",
+        "name": "Choose your ceremony format with your monk or celebrant",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Buddhist"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:Buddhist:setting",
+        "name": "Discuss any blessings, offerings, and ceremony setup you want",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Buddhist"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:Buddhist:participants",
+        "name": "Confirm ceremony participants, readings, and guest guidance",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Buddhist"
+      }
+    ],
+    "Choose later": [],
+    "Christian": [
+      {
+        "done": false,
+        "due": "2029-07-05",
+        "id": "starter:common:budget",
+        "name": "Agree on your wedding budget and priorities",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-08-04",
+        "id": "starter:common:venue",
+        "name": "Shortlist and confirm ceremony and celebration venues",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:guest-list",
+        "name": "Build your guest list and planning tiers",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:officiant",
+        "name": "Confirm your officiant or ceremony leader",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:requirements",
+        "name": "Check local marriage registration and document requirements",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:common:vendors",
+        "name": "Compare and book catering, photography, and key vendors",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-18",
+        "id": "starter:common:invitations",
+        "name": "Design invitations and collect mailing addresses",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:common:rsvp",
+        "name": "Send invitations and set an RSVP deadline",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:common:logistics",
+        "name": "Arrange guest accommodation and transport",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:common:preferences",
+        "name": "Confirm meal preferences and accessibility needs",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:common:run-sheet",
+        "name": "Create the day-of schedule and share key contacts",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-25",
+        "id": "starter:common:final-confirmations",
+        "name": "Reconfirm vendors, guest counts, and remaining payments",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:Christian:ceremony",
+        "name": "Discuss your ceremony format with your minister or celebrant",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Christian"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:Christian:preparation",
+        "name": "Ask about any preparation requested by your chosen church",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Christian"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:Christian:readings",
+        "name": "Choose readings, music, and vows with your officiant",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Christian"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:Christian:rehearsal",
+        "name": "Arrange a ceremony rehearsal if you want one",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Christian"
+      }
+    ],
+    "Civil / secular": [
+      {
+        "done": false,
+        "due": "2029-07-05",
+        "id": "starter:common:budget",
+        "name": "Agree on your wedding budget and priorities",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-08-04",
+        "id": "starter:common:venue",
+        "name": "Shortlist and confirm ceremony and celebration venues",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:guest-list",
+        "name": "Build your guest list and planning tiers",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:officiant",
+        "name": "Confirm your officiant or ceremony leader",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:requirements",
+        "name": "Check local marriage registration and document requirements",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:common:vendors",
+        "name": "Compare and book catering, photography, and key vendors",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-18",
+        "id": "starter:common:invitations",
+        "name": "Design invitations and collect mailing addresses",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:common:rsvp",
+        "name": "Send invitations and set an RSVP deadline",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:common:logistics",
+        "name": "Arrange guest accommodation and transport",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:common:preferences",
+        "name": "Confirm meal preferences and accessibility needs",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:common:run-sheet",
+        "name": "Create the day-of schedule and share key contacts",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-25",
+        "id": "starter:common:final-confirmations",
+        "name": "Reconfirm vendors, guest counts, and remaining payments",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:Civil / secular:ceremony",
+        "name": "Plan your ceremony format, vows, and readings",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Civil / secular"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:Civil / secular:participants",
+        "name": "Confirm ceremony participants and any rehearsal",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Civil / secular"
+      }
+    ],
+    "Custom ceremony": [
+      {
+        "done": false,
+        "due": "2029-07-05",
+        "id": "starter:common:budget",
+        "name": "Agree on your wedding budget and priorities",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-08-04",
+        "id": "starter:common:venue",
+        "name": "Shortlist and confirm ceremony and celebration venues",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:guest-list",
+        "name": "Build your guest list and planning tiers",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:officiant",
+        "name": "Confirm your officiant or ceremony leader",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:requirements",
+        "name": "Check local marriage registration and document requirements",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:common:vendors",
+        "name": "Compare and book catering, photography, and key vendors",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-18",
+        "id": "starter:common:invitations",
+        "name": "Design invitations and collect mailing addresses",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:common:rsvp",
+        "name": "Send invitations and set an RSVP deadline",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:common:logistics",
+        "name": "Arrange guest accommodation and transport",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:common:preferences",
+        "name": "Confirm meal preferences and accessibility needs",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:common:run-sheet",
+        "name": "Create the day-of schedule and share key contacts",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-25",
+        "id": "starter:common:final-confirmations",
+        "name": "Reconfirm vendors, guest counts, and remaining payments",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:Custom ceremony:vision",
+        "name": "Write down your ceremony vision and meaningful customs",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Custom ceremony"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:Custom ceremony:leader",
+        "name": "Choose a celebrant or someone to lead your ceremony",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Custom ceremony"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:Custom ceremony:script",
+        "name": "Create your ceremony script, vows, and readings",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Custom ceremony"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:Custom ceremony:participants",
+        "name": "Confirm participant roles and rehearse your chosen format",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Custom ceremony"
+      }
+    ],
+    "Hindu": [
+      {
+        "done": false,
+        "due": "2029-07-05",
+        "id": "starter:common:budget",
+        "name": "Agree on your wedding budget and priorities",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-08-04",
+        "id": "starter:common:venue",
+        "name": "Shortlist and confirm ceremony and celebration venues",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:guest-list",
+        "name": "Build your guest list and planning tiers",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:officiant",
+        "name": "Confirm your officiant or ceremony leader",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:requirements",
+        "name": "Check local marriage registration and document requirements",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:common:vendors",
+        "name": "Compare and book catering, photography, and key vendors",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-18",
+        "id": "starter:common:invitations",
+        "name": "Design invitations and collect mailing addresses",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:common:rsvp",
+        "name": "Send invitations and set an RSVP deadline",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:common:logistics",
+        "name": "Arrange guest accommodation and transport",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:common:preferences",
+        "name": "Confirm meal preferences and accessibility needs",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:common:run-sheet",
+        "name": "Create the day-of schedule and share key contacts",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-25",
+        "id": "starter:common:final-confirmations",
+        "name": "Reconfirm vendors, guest counts, and remaining payments",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:Hindu:ceremony",
+        "name": "Discuss the ceremony sequence and chosen rituals with your priest",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Hindu"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:Hindu:events",
+        "name": "Choose any pre-wedding events you want to include",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Hindu"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:Hindu:materials",
+        "name": "Confirm ceremony materials, attire, and venue arrangements with your priest",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Hindu"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:Hindu:participants",
+        "name": "Brief the people taking part in your chosen rituals",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Hindu"
+      }
+    ],
+    "Interfaith / multicultural": [
+      {
+        "done": false,
+        "due": "2029-07-05",
+        "id": "starter:common:budget",
+        "name": "Agree on your wedding budget and priorities",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-08-04",
+        "id": "starter:common:venue",
+        "name": "Shortlist and confirm ceremony and celebration venues",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:guest-list",
+        "name": "Build your guest list and planning tiers",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:officiant",
+        "name": "Confirm your officiant or ceremony leader",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:requirements",
+        "name": "Check local marriage registration and document requirements",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:common:vendors",
+        "name": "Compare and book catering, photography, and key vendors",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-18",
+        "id": "starter:common:invitations",
+        "name": "Design invitations and collect mailing addresses",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:common:rsvp",
+        "name": "Send invitations and set an RSVP deadline",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:common:logistics",
+        "name": "Arrange guest accommodation and transport",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:common:preferences",
+        "name": "Confirm meal preferences and accessibility needs",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:common:run-sheet",
+        "name": "Create the day-of schedule and share key contacts",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-25",
+        "id": "starter:common:final-confirmations",
+        "name": "Reconfirm vendors, guest counts, and remaining payments",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:Interfaith / multicultural:traditions",
+        "name": "Discuss the traditions each partner wants to include",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Interfaith / multicultural"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:Interfaith / multicultural:leaders",
+        "name": "Find officiants comfortable with your combined ceremony",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Interfaith / multicultural"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:Interfaith / multicultural:sequence",
+        "name": "Agree on the ceremony sequence, languages, and readings",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Interfaith / multicultural"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:Interfaith / multicultural:guidance",
+        "name": "Prepare a short guest guide to your chosen traditions",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Interfaith / multicultural"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:Interfaith / multicultural:family",
+        "name": "Share the agreed plans with family and ceremony participants",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Interfaith / multicultural"
+      }
+    ],
+    "Jain": [
+      {
+        "done": false,
+        "due": "2029-07-05",
+        "id": "starter:common:budget",
+        "name": "Agree on your wedding budget and priorities",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-08-04",
+        "id": "starter:common:venue",
+        "name": "Shortlist and confirm ceremony and celebration venues",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:guest-list",
+        "name": "Build your guest list and planning tiers",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:officiant",
+        "name": "Confirm your officiant or ceremony leader",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:requirements",
+        "name": "Check local marriage registration and document requirements",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:common:vendors",
+        "name": "Compare and book catering, photography, and key vendors",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-18",
+        "id": "starter:common:invitations",
+        "name": "Design invitations and collect mailing addresses",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:common:rsvp",
+        "name": "Send invitations and set an RSVP deadline",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:common:logistics",
+        "name": "Arrange guest accommodation and transport",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:common:preferences",
+        "name": "Confirm meal preferences and accessibility needs",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:common:run-sheet",
+        "name": "Create the day-of schedule and share key contacts",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-25",
+        "id": "starter:common:final-confirmations",
+        "name": "Reconfirm vendors, guest counts, and remaining payments",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:Jain:ceremony",
+        "name": "Discuss your chosen ceremony and customs with your officiant",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Jain"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:Jain:menu",
+        "name": "Confirm your preferred menu and dietary arrangements",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Jain"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:Jain:materials",
+        "name": "Confirm ceremony materials and the agreed sequence of events",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Jain"
+      }
+    ],
+    "Jewish": [
+      {
+        "done": false,
+        "due": "2029-07-05",
+        "id": "starter:common:budget",
+        "name": "Agree on your wedding budget and priorities",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-08-04",
+        "id": "starter:common:venue",
+        "name": "Shortlist and confirm ceremony and celebration venues",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:guest-list",
+        "name": "Build your guest list and planning tiers",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:officiant",
+        "name": "Confirm your officiant or ceremony leader",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:requirements",
+        "name": "Check local marriage registration and document requirements",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:common:vendors",
+        "name": "Compare and book catering, photography, and key vendors",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-18",
+        "id": "starter:common:invitations",
+        "name": "Design invitations and collect mailing addresses",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:common:rsvp",
+        "name": "Send invitations and set an RSVP deadline",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:common:logistics",
+        "name": "Arrange guest accommodation and transport",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:common:preferences",
+        "name": "Confirm meal preferences and accessibility needs",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:common:run-sheet",
+        "name": "Create the day-of schedule and share key contacts",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-25",
+        "id": "starter:common:final-confirmations",
+        "name": "Reconfirm vendors, guest counts, and remaining payments",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:Jewish:ceremony",
+        "name": "Discuss your ceremony traditions with your rabbi or officiant",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Jewish"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:Jewish:documents",
+        "name": "Discuss ceremony documents and participants with your officiant",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Jewish"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:Jewish:setting",
+        "name": "Plan the ceremony setting and any ritual objects you choose",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Jewish"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:Jewish:readings",
+        "name": "Confirm your selected blessings, readings, and music",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Jewish"
+      }
+    ],
+    "Muslim / Nikah": [
+      {
+        "done": false,
+        "due": "2029-07-05",
+        "id": "starter:common:budget",
+        "name": "Agree on your wedding budget and priorities",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-08-04",
+        "id": "starter:common:venue",
+        "name": "Shortlist and confirm ceremony and celebration venues",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:guest-list",
+        "name": "Build your guest list and planning tiers",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:officiant",
+        "name": "Confirm your officiant or ceremony leader",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:requirements",
+        "name": "Check local marriage registration and document requirements",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:common:vendors",
+        "name": "Compare and book catering, photography, and key vendors",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-18",
+        "id": "starter:common:invitations",
+        "name": "Design invitations and collect mailing addresses",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:common:rsvp",
+        "name": "Send invitations and set an RSVP deadline",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:common:logistics",
+        "name": "Arrange guest accommodation and transport",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:common:preferences",
+        "name": "Confirm meal preferences and accessibility needs",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:common:run-sheet",
+        "name": "Create the day-of schedule and share key contacts",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-25",
+        "id": "starter:common:final-confirmations",
+        "name": "Reconfirm vendors, guest counts, and remaining payments",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:Muslim / Nikah:ceremony",
+        "name": "Discuss your preferred Nikah format with your officiant",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Muslim / Nikah"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:Muslim / Nikah:agreements",
+        "name": "Discuss ceremony agreements and documentation with your officiant",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Muslim / Nikah"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:Muslim / Nikah:participants",
+        "name": "Confirm ceremony participants and their roles with your officiant",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Muslim / Nikah"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:Muslim / Nikah:celebrations",
+        "name": "Plan any additional celebrations you choose to host",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Muslim / Nikah"
+      }
+    ],
+    "Sikh / Anand Karaj": [
+      {
+        "done": false,
+        "due": "2029-07-05",
+        "id": "starter:common:budget",
+        "name": "Agree on your wedding budget and priorities",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-08-04",
+        "id": "starter:common:venue",
+        "name": "Shortlist and confirm ceremony and celebration venues",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:guest-list",
+        "name": "Build your guest list and planning tiers",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:officiant",
+        "name": "Confirm your officiant or ceremony leader",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:common:requirements",
+        "name": "Check local marriage registration and document requirements",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-03",
+        "id": "starter:common:vendors",
+        "name": "Compare and book catering, photography, and key vendors",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-10-18",
+        "id": "starter:common:invitations",
+        "name": "Design invitations and collect mailing addresses",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:common:rsvp",
+        "name": "Send invitations and set an RSVP deadline",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:common:logistics",
+        "name": "Arrange guest accommodation and transport",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-02",
+        "id": "starter:common:preferences",
+        "name": "Confirm meal preferences and accessibility needs",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:common:run-sheet",
+        "name": "Create the day-of schedule and share key contacts",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-12-25",
+        "id": "starter:common:final-confirmations",
+        "name": "Reconfirm vendors, guest counts, and remaining payments",
+        "notes": "Suggested planning task. Adjust the date, owner, and notes to your plans. Registration rules vary; confirm with your local registrar.",
+        "owner": "",
+        "starterKind": "common"
+      },
+      {
+        "done": false,
+        "due": "2029-09-03",
+        "id": "starter:Sikh / Anand Karaj:ceremony",
+        "name": "Discuss your Anand Karaj plans with your chosen gurdwara",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Sikh / Anand Karaj"
+      },
+      {
+        "done": false,
+        "due": "2029-11-02",
+        "id": "starter:Sikh / Anand Karaj:guidance",
+        "name": "Confirm ceremony arrangements and guest guidance with the gurdwara",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Sikh / Anand Karaj"
+      },
+      {
+        "done": false,
+        "due": "2029-11-17",
+        "id": "starter:Sikh / Anand Karaj:hospitality",
+        "name": "Coordinate any shared meal and hospitality arrangements",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Sikh / Anand Karaj"
+      },
+      {
+        "done": false,
+        "due": "2029-12-18",
+        "id": "starter:Sikh / Anand Karaj:participants",
+        "name": "Share the agreed ceremony schedule with participants",
+        "notes": "Optional starter suggestion for your selected wedding style. Practices vary by community and personal preference. Confirm details with your chosen officiant or celebrant; edit or remove anything you do not need.",
+        "owner": "",
+        "starterKind": "Sikh / Anand Karaj"
+      }
+    ]
+  }
+};
