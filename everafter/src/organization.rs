@@ -52,12 +52,13 @@ pub fn validate_and_rename(db:&Connection,kind:&str,id:&str,data:&mut Value)->Re
     if duplicates>0 {return Err("That name already exists. Choose a different name.".into());}
     let old:Option<String>=db.query_row("SELECT json_extract(data,'$.name') FROM records WHERE kind=?1 AND id=?2",params![kind,id],|r|r.get(0)).ok();
     if let Some(old)=old {let field=if kind=="tiers"{"$.tier"}else{"$.category"};db.execute("UPDATE records SET data=json_set(data,?1,?2) WHERE kind='guests' AND json_extract(data,?1)=?3",params![field,name,old]).map_err(|e|e.to_string())?;}
+    if kind=="tiers"{if let Some(old)=db.query_row("SELECT json_extract(data,'$.name') FROM records WHERE kind=?1 AND id=?2",params![kind,id],|r|r.get::<_,String>(0)).ok(){for mut booking in crate::planning::list(db,"bookings")?{if let Some(tiers)=booking["eligibleTiers"].as_array_mut(){for tier in tiers{if tier.as_str()==Some(&old){*tier=json!(name);}}}db.execute("UPDATE records SET data=?1 WHERE kind='bookings' AND id=?2",params![booking.to_string(),booking["id"].as_str()]).map_err(|e|e.to_string())?;}}}
     data["name"]=json!(name); Ok(())
 }
 pub fn check_delete(db:&Connection,kind:&str,id:&str)->Result<(),String> {
     if kind!="tiers" && kind!="categories" {return Ok(());}
     let name:Option<String>=db.query_row("SELECT json_extract(data,'$.name') FROM records WHERE kind=?1 AND id=?2",params![kind,id],|r|r.get(0)).ok();
-    if let Some(name)=name {let field=if kind=="tiers"{"$.tier"}else{"$.category"};let count:i64=db.query_row("SELECT count(*) FROM records WHERE kind='guests' AND json_extract(data,?1)=?2",params![field,name],|r|r.get(0)).map_err(|e|e.to_string())?;if count>0{return Err("Reassign guests before deleting this group.".into());}}
+    if let Some(name)=name {let field=if kind=="tiers"{"$.tier"}else{"$.category"};let count:i64=db.query_row("SELECT count(*) FROM records WHERE kind='guests' AND json_extract(data,?1)=?2",params![field,name],|r|r.get(0)).map_err(|e|e.to_string())?;if count>0{return Err("Reassign guests before deleting this group.".into());}if kind=="tiers"&&crate::planning::list(db,"bookings")?.iter().any(|b|b["eligibleTiers"].as_array().is_some_and(|a|a.iter().any(|t|t.as_str()==Some(&name)))){return Err("Update booking eligibility before deleting this tier.".into());}}
     Ok(())
 }
 pub async fn bulk(State(db):State<Db>,Json(body):Json<Value>)->ApiResult {

@@ -8,11 +8,14 @@ After Pages is enabled, the site is `https://daragonjumper1.github.io/everafter-
 
 The public demo uses fictional sample guests and stores changes **only in each browser's localStorage**. Testers do not share a wedding or a database. A reset button restores the sample wedding. Use fictional contact details during public testing. No real database, API key, or test password is included in this repository.
 
+See [the feedback changelog](FEEDBACK-CHANGELOG.md) for the latest implemented changes and service-dependent gaps.
+
 ### Available in the Pages demo
 
 - Compact phone UI and desktop layout, bottom navigation, dashboard, and task tabs.
 - Guest CRUD, CSV/vCard import and review, category suggestions from explicit saved labels, categories/tiers, bulk grouping, and RSVP status editing by the planner.
 - Hotel/room records, vehicles and assignments, vendors, payment totals, and budgets.
+- Inclusive local onboarding, multi-event wedding details, dependency-aware tasks, percentage budget earmarks, bulk accommodation/auto-allocation, itinerary grouping, and a driver-board prototype.
 - Wedding-style starter checklists exported directly from the Rust implementation.
 - Invitation prompt editor and navigation, with an honest unavailable state for live generation.
 
@@ -38,7 +41,7 @@ From `everafter/`, run `cargo run --release`, then open `http://127.0.0.1:3000`.
 
 ## Update the demo
 
-The `docs/` assets are a prepared snapshot. When changing shared UI, copy the corresponding assets from `everafter/static/` and retain the demo-specific API adapter, relative asset URLs, and disabled API-key/guest-link behavior. Refresh checklist templates with:
+The `docs/` assets are a prepared snapshot. Run `node scripts/build-demo.mjs` after shared UI changes. It copies the source assets and retains the demo-specific API adapter, relative URLs, and disabled API-key/guest-link behavior. Refresh checklist templates with:
 
 ```text
 cargo run --manifest-path everafter/Cargo.toml --bin export-demo-checklists -- docs/checklist-templates.json

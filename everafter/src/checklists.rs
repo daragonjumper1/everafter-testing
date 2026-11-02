@@ -40,7 +40,9 @@ pub fn apply(db: &Connection, kind: &str, date: &str) -> rusqlite::Result<usize>
 fn insert(db: &Connection, group: &str, key: &str, name: &str, days: i32, date: &str, notes: &str) -> rusqlite::Result<usize> {
     let id = format!("starter:{group}:{key}");
     let due: Option<String> = db.query_row("SELECT date(?1, ?2)", params![date, format!("-{days} days")], |r| r.get(0))?;
-    let task = json!({"id":id,"name":name,"owner":"","due":due.unwrap_or_default(),"notes":notes,"done":false,"starterKind":group});
+    let prerequisites:&[&str]=if group!="common"{&["officiant"]}else{match key{"venue"|"guest-list"=>&["budget"],"officiant"=>&["venue"],"vendors"=>&["venue","budget"],"invitations"=>&["guest-list","venue"],"rsvp"=>&["invitations"],"logistics"=>&["guest-list","venue"],"preferences"=>&["rsvp"],"run-sheet"=>&["vendors","officiant"],"final-confirmations"=>&["rsvp","vendors","logistics"],_=>&[]}};
+    let dependency_ids:Vec<String>=prerequisites.iter().map(|p|format!("starter:common:{p}")).collect();
+    let task = json!({"id":id,"name":name,"owner":"","due":due.unwrap_or_default(),"notes":notes,"done":false,"starterKind":group,"dependencyIds":dependency_ids});
     db.execute("INSERT OR IGNORE INTO records(kind,id,data) VALUES('tasks',?1,?2)",params![id,task.to_string()])
 }
 #[cfg(test)]

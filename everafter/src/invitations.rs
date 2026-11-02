@@ -7,7 +7,7 @@ use crate::{Db, ApiResult, error};
 
 // Never store credentials in SQLite or return them to the browser.
 static SESSION_KEY: Mutex<Option<String>> = Mutex::new(None);
-fn api_key() -> Option<String> {
+pub(crate) fn api_key() -> Option<String> {
     SESSION_KEY.lock().ok().and_then(|k| k.clone())
         .or_else(|| std::env::var("OPENAI_API_KEY").ok().filter(|s| !s.trim().is_empty()))
 }

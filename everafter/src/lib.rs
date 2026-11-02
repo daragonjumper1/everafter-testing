@@ -6,6 +6,8 @@ mod invitations;
 pub mod checklists;
 mod auth;
 mod organization;
+mod planning;
+mod contact_ai;
 
 type Db = Arc<Mutex<Connection>>;
 type ApiResult = Result<Json<Value>, (StatusCode, String)>;
@@ -15,11 +17,11 @@ async fn records(State(db): State<Db>) -> ApiResult {
     let db = db.lock().map_err(error)?;
     let mut stmt = db.prepare("SELECT kind, data FROM records ORDER BY rowid").map_err(error)?;
     let rows = stmt.query_map([], |r| Ok((r.get::<_, String>(0)?, r.get::<_, String>(1)?))).map_err(error)?;
-    let mut result = json!({"guests":[],"tasks":[],"vendors":[],"rides":[],"settings":[],"categories":[],"tiers":[]});
+    let mut result = json!({"guests":[],"tasks":[],"vendors":[],"rides":[],"settings":[],"categories":[],"tiers":[],"events":[],"bookings":[],"allocations":[],"expenses":[],"requests":[]});
     for row in rows { let (kind, data) = row.map_err(error)?; if let Some(list) = result.get_mut(&kind).and_then(Value::as_array_mut) { list.push(serde_json::from_str(&data).map_err(error)?); } }
     Ok(Json(result))
 }
-fn valid_kind(k: &str) -> bool { ["guests","tasks","vendors","rides","settings","categories","tiers"].contains(&k) }
+fn valid_kind(k: &str) -> bool { ["guests","tasks","vendors","rides","settings","categories","tiers","events","bookings","allocations","expenses","requests"].contains(&k) }
 async fn save(State(db): State<Db>, Path(kind): Path<String>, Json(mut data): Json<Value>) -> ApiResult {
     if !valid_kind(&kind) || !data.is_object() { return Err((StatusCode::BAD_REQUEST,"Invalid record".into())); }
     let id = data.get("id").and_then(Value::as_str).map(str::to_owned).unwrap_or_else(|| uuid::Uuid::new_v4().to_string());
@@ -31,11 +33,15 @@ async fn save(State(db): State<Db>, Path(kind): Path<String>, Json(mut data): Js
         if !checklists::KINDS.contains(&selected) {return Err((StatusCode::BAD_REQUEST,"Choose a supported wedding style.".into()));}
     }
     let tx=db.transaction().map_err(error)?;
+    let previous_allocation_guest=if kind=="allocations"{planning::list(&tx,"allocations").map_err(error)?.into_iter().find(|a|a["id"]==id).and_then(|a|a["guestId"].as_str().map(str::to_owned))}else{None};
+    planning::validate(&tx,&kind,&id,&data).map_err(|m|(StatusCode::BAD_REQUEST,m))?;
     organization::validate_and_rename(&tx,&kind,&id,&mut data).map_err(|m|(StatusCode::BAD_REQUEST,m))?;
     let old_style:Option<String>=if kind=="settings" {tx.query_row("SELECT json_extract(data,'$.weddingKind') FROM records WHERE kind='settings' AND id=?1",[&id],|r|r.get::<_,Option<String>>(0)).ok().flatten()}else{None};
     // Preserve the unguessable guest link on subsequent planner edits.
     if kind == "guests" { if let Ok(old) = tx.query_row("SELECT data FROM records WHERE kind=?1 AND id=?2", params![kind,id], |r| r.get::<_,String>(0)) { let old: Value = serde_json::from_str(&old).map_err(error)?; data["token"] = old["token"].clone(); } }
     tx.execute("INSERT INTO records(kind,id,data) VALUES(?1,?2,?3) ON CONFLICT(kind,id) DO UPDATE SET data=excluded.data",params![kind,id,data.to_string()]).map_err(error)?;
+    planning::after_save(&tx,&kind,&data).map_err(|m|(StatusCode::BAD_REQUEST,m))?;
+    if let Some(guest)=previous_allocation_guest{if data["guestId"].as_str()!=Some(&guest){planning::sync_allocation(&tx,&guest).map_err(error)?;}}
     if kind=="settings" {
         let selected=data.get("weddingKind").and_then(Value::as_str).unwrap_or("Choose later");
         if old_style.as_deref()!=Some(selected) { checklists::apply(&tx,selected,data.get("date").and_then(Value::as_str).unwrap_or("")).map_err(error)?; }
@@ -44,9 +50,14 @@ async fn save(State(db): State<Db>, Path(kind): Path<String>, Json(mut data): Js
     Ok(Json(data))
 }
 async fn remove(State(db): State<Db>, Path((kind,id)): Path<(String,String)>) -> ApiResult {
-    let db=db.lock().map_err(error)?;
-    organization::check_delete(&db,&kind,&id).map_err(|m|(StatusCode::CONFLICT,m))?;
-    db.execute("DELETE FROM records WHERE kind=?1 AND id=?2", params![kind,id]).map_err(error)?;
+    let mut db=db.lock().map_err(error)?;
+    let tx=db.transaction().map_err(error)?;
+    planning::check_delete(&tx,&kind,&id).map_err(|m|(StatusCode::CONFLICT,m))?;
+    organization::check_delete(&tx,&kind,&id).map_err(|m|(StatusCode::CONFLICT,m))?;
+    let affected_guest=if kind=="allocations"{planning::list(&tx,"allocations").map_err(error)?.into_iter().find(|a|a["id"]==id).and_then(|a|a["guestId"].as_str().map(str::to_owned))}else{None};
+    tx.execute("DELETE FROM records WHERE kind=?1 AND id=?2", params![kind,id]).map_err(error)?;
+    if let Some(guest)=affected_guest{planning::sync_allocation(&tx,&guest).map_err(error)?;}
+    tx.commit().map_err(error)?;
     Ok(Json(json!({"ok":true})))
 }
 async fn guest_get(State(db): State<Db>, Path(token): Path<String>) -> ApiResult {
@@ -55,7 +66,7 @@ async fn guest_get(State(db): State<Db>, Path(token): Path<String>) -> ApiResult
     let g: Value = serde_json::from_str(&raw).map_err(error)?;
     // Guest responses never expose private tiers, notes, budgets, or other guests.
     let mut public = json!({});
-    for key in ["name","rsvp","meal","address","needsHotel","needsRide","arrival","passengers","hotel","room","pickup","driver","phone"] { public[key] = g.get(key).cloned().unwrap_or(Value::Null); }
+    for key in ["name","rsvp","meal","address","needsHotel","needsRide","arrival","passengers","hotel","room","hotelAddress","pickup","driver","phone"] { public[key] = g.get(key).cloned().unwrap_or(Value::Null); }
     Ok(Json(public))
 }
 async fn guest_update(State(db): State<Db>, Path(token): Path<String>, Json(input): Json<Value>) -> ApiResult {
@@ -77,6 +88,9 @@ pub fn router(database_path: &std::path::Path) -> AppRouter {
         .route("/api/records",get(records)).route("/api/records/{kind}",post(save))
         .route("/api/guests/organize",post(organization::bulk))
         .route("/api/guests/import",post(organization::import_contacts))
+        .route("/api/accommodation/auto-allocate",post(planning::auto_allocate))
+        .route("/api/transport/assign",post(planning::assign_transport))
+        .route("/api/contacts/suggest",post(contact_ai::suggest))
         .route("/api/records/{kind}/{id}",axum::routing::delete(remove))
         .route("/api/guest/{token}",get(guest_get).post(guest_update))
         .route("/invitation.js",get(|| async { ([(axum::http::header::CONTENT_TYPE,"text/javascript; charset=utf-8")], include_str!("../static/invitation.js")) }))
@@ -84,6 +98,8 @@ pub fn router(database_path: &std::path::Path) -> AppRouter {
         .route("/contacts.js",get(|| async { ([(axum::http::header::CONTENT_TYPE,"text/javascript; charset=utf-8")], include_str!("../static/contacts.js")) }))
         .route("/mobile.js",get(|| async { ([(axum::http::header::CONTENT_TYPE,"text/javascript; charset=utf-8")], include_str!("../static/mobile.js")) }))
         .route("/mobile.css",get(|| async { ([(axum::http::header::CONTENT_TYPE,"text/css; charset=utf-8")], include_str!("../static/mobile.css")) }))
+        .route("/planning.js",get(|| async { ([(axum::http::header::CONTENT_TYPE,"text/javascript; charset=utf-8")], include_str!("../static/planning.js")) }))
+        .route("/planning.css",get(|| async { ([(axum::http::header::CONTENT_TYPE,"text/css; charset=utf-8")], include_str!("../static/planning.css")) }))
         .route("/api/ai/status",get(invitations::status))
         .route("/api/ai/connect",post(invitations::connect))
         .route("/api/invitations",get(invitations::list))
