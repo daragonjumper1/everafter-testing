@@ -14,7 +14,7 @@ html=html.slice(0,apiStart)+"async function api(url,method='GET',body){return wi
 const linkStart=html.indexOf('async function copyLink(id){'),linkEnd=html.indexOf('\nfunction assign(',linkStart);
 if(linkStart<0||linkEnd<0)throw Error('Shared guest-link function not found.');
 html=html.slice(0,linkStart)+"async function copyLink(){toast('Private guest links need the Rust server and are unavailable in this browser-only demo.')}"+html.slice(linkEnd);
-const revision=process.env.GITHUB_SHA||'guest-actions-20261102';
+const revision=process.env.GITHUB_SHA||'online-contacts-20261105';
 html=html.replace(/(src|href)="(\.\/[^"?]+\.(?:js|css))"/g,(_,attribute,url)=>`${attribute}="${url}?v=${revision}"`);
 await fs.writeFile(path.join(docs,'index.html'),html);
 let invitation=await fs.readFile(path.join(docs,'invitation.js'),'utf8');
